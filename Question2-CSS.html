@@ -8,7 +8,6 @@
       .mainsection a {
          text-decoration: none;
          color: #414040;
-         outline: none;
          padding: 4px 8px;
          display: inline-block;
       }
@@ -34,9 +33,10 @@
       /* Heading style */
       h1 {
          font-size: 24px;
+         margin-bottom: 16px;
       }
 
-      /* Hide the image text for screen readers since we provide real text */
+      /* Optional image for decoration */
       .image-of-text {
          display: block;
          margin-bottom: 16px;
@@ -48,8 +48,8 @@
    <!-- Provide real heading text for accessibility -->
    <h1>Shopping Categories</h1>
 
-   <!-- Optional image for decoration -->
-   <img src="lab2/lab2-imageoftext.gif" alt="" class="image-of-text" aria-hidden="true">
+   <!-- Decorative image (no ARIA) -->
+   <img src="lab2/lab2-imageoftext.gif" alt="" class="image-of-text">
 
    <ul>
       <li><a href="#">Animals</a></li>
