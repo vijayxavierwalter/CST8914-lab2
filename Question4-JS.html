@@ -3,20 +3,37 @@
 
 <head>
     <title>Question 4 - JavaScript</title>
-
 </head>
 
 <body>
     <h1>HTML DOM Events</h1>
-    <p>Trigger a function on hover that will output "Hello World":</p>
+    <p>Trigger a function on hover or focus that will output "Hello World":</p>
 
-    <button onmouseover="myFunction()">Action!</button>
+    <button id="myButton">Action!</button>
     <p id="demo"></p>
+
+    <script>
+        const button = document.getElementById("myButton");
+        const demo = document.getElementById("demo");
+
+        // Function to show the text
+        function showText() {
+            demo.innerHTML = "Hello World";
+        }
+
+        // Function to hide the text
+        function hideText() {
+            demo.innerHTML = "";
+        }
+
+        // Mouse events
+        button.addEventListener("mouseover", showText);
+        button.addEventListener("mouseout", hideText);
+
+        // Keyboard focus events
+        button.addEventListener("focus", showText);
+        button.addEventListener("blur", hideText);
+    </script>
 </body>
-<script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World";
-    }
-</script>
 
 </html>
