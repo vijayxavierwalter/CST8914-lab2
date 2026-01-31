@@ -1,31 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <meta charset="UTF-8">
    <title>Question 2 - CSS</title>
    <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
-    }
+      /* Style for links */
+      .mainsection a {
+         text-decoration: none;
+         color: #414040;
+         outline: none;
+         padding: 4px 8px;
+         display: inline-block;
+      }
 
-    
-    </style>
+      /* Hover and focus styles for accessibility */
+      .mainsection a:hover,
+      .mainsection a:focus {
+         background-color: #e0e0e0;
+         color: #000;
+         border-radius: 4px;
+      }
+
+      /* Style the list */
+      ul {
+         list-style-type: none; /* remove bullets */
+         padding: 0;
+      }
+
+      li {
+         margin-bottom: 8px;
+      }
+
+      /* Heading style */
+      h1 {
+         font-size: 24px;
+      }
+
+      /* Hide the image text for screen readers since we provide real text */
+      .image-of-text {
+         display: block;
+         margin-bottom: 16px;
+      }
+   </style>
 </head>
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+   <!-- Provide real heading text for accessibility -->
+   <h1>Shopping Categories</h1>
 
-<ul>
-  <li><a href="#">Animals</a></li>
-  <li><a href="#">Computers</a></li>
-  <li><a href="#">Diversity and inclusion</a></li>
-  <li><a href="#">Food</a></li>
-  <li><a href="#">Medicine</a></li>
-  <li><a href="#">Music</a></li>
-</ul>
-</div>    
+   <!-- Optional image for decoration -->
+   <img src="lab2/lab2-imageoftext.gif" alt="" class="image-of-text" aria-hidden="true">
 
+   <ul>
+      <li><a href="#">Animals</a></li>
+      <li><a href="#">Computers</a></li>
+      <li><a href="#">Diversity and Inclusion</a></li>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Medicine</a></li>
+      <li><a href="#">Music</a></li>
+   </ul>
+</div>
 </body>
 </html>
