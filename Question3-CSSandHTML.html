@@ -2,39 +2,56 @@
 <html lang="en">
 
 <head>
-  <title>Question 3- CSS & HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 3 - CSS & HTML</title>
   <style>
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
     body {
       padding: 20px;
-      background-color: #2f2f2f;
+      background-color: #2f2f2f; /* Dark background */
+      color: #ffffff; /* Light text for readability */
+      font-family: Arial, sans-serif;
     }
 
-    h1, h2, p {
-      color: black;
+    h1 {
+      color: #ffffff;
+    }
+
+    p {
+      color: #e0e0e0;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #4CAF50; /* Green button with good contrast */
+      color: white;
+      border: none;
+      padding: 15px 32px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049; /* Slightly darker on hover */
+    }
+
+    button:focus {
+      outline: 3px solid #ffcc00; /* Visible focus for keyboard users */
+      outline-offset: 2px;
     }
   </style>
 </head>
 
 <body>
-  
-  <h1>HTML made Easy</h1>
+
+  <h1>HTML Made Easy</h1>
 
   <p>What causes errors in HTML?</p>
 
-  <div class="button">Submit answers</div>
+  <button>Submit answers</button>
 
 </body>
 
